@@ -22,7 +22,7 @@ def grow():
 
 
 window.title('“My First Window”')
-window.geometry('50x50')
+window.geometry(f'{size}x{size}')
 for x in range(6):
     window.after(1000 * (x+1), grow)
 window.mainloop()
